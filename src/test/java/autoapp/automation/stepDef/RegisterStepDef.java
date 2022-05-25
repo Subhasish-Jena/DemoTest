@@ -33,4 +33,9 @@ public class RegisterStepDef {
         PersonalInfoPage.enterPersonalInformation(dataTable);
         Thread.sleep(5000);
     }
+
+    @Then("^I should get an error with text \"([^\"]*)\"$")
+    public void i_should_get_an_error(String errorMessage ) {
+        RegisterPage.waitAndVerifyError(errorMessage);
+    }
 }

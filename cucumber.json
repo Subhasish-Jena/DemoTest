@@ -6,11 +6,11 @@
         "before": [
           {
             "result": {
-              "duration": 3511319258,
+              "duration": 2368920437,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.setUp()"
+              "location": "Hooks.setUp()"
             }
           }
         ],
@@ -21,11 +21,11 @@
         "after": [
           {
             "result": {
-              "duration": 619211050,
+              "duration": 103992893,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.tearDown()"
+              "location": "Hooks.tearDown()"
             }
           }
         ],
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8373813162,
+              "duration": 6611366635,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 4467083745,
+              "duration": 6254430186,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 5463358298,
+              "duration": 5259090165,
               "status": "passed"
             },
             "line": 6,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 9663785286,
+              "duration": 19301785843,
               "status": "passed"
             },
             "line": 7,
@@ -117,12 +117,242 @@
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1513625104,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate error message for incorrect email address",
+        "description": "",
+        "id": "registering-to-automation-practice;validate-error-message-for-incorrect-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 101209683,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6550550840,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1989372706,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click sign in",
+            "match": {
+              "location": "RegisterStepDef.i_click_sign_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5184363390,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I create account with emailid \"2347234743732\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2347234743732",
+                  "offset": 31
+                }
+              ],
+              "location": "RegisterStepDef.i_create_account_with_emailid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41156339,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should get an error with text \"Invalid email address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address",
+                  "offset": 33
+                }
+              ],
+              "location": "RegisterStepDef.i_should_get_an_error(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
     "name": "Registering to automation practice",
     "description": "",
     "id": "registering-to-automation-practice",
     "keyword": "Feature",
-    "uri": "src/test/java/autoapp/automation/features/Register.feature"
+    "uri": "Register.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1186690613,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Buy a summer dress and verify the cart",
+        "description": "",
+        "id": "check-shopping-functions;buy-a-summer-dress-and-verify-the-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 100036299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6831530944,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Automation practice application is opened",
+            "match": {
+              "location": "RegisterStepDef.automation_practice_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3836742452,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Dresses menu option",
+            "match": {
+              "location": "ShoppingStepDef.i_click_dresses_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2239731087,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Summer Dresses sub menu option",
+            "match": {
+              "location": "ShoppingStepDef.i_click_summer_dresses_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21945541,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see Summer Dresses page loaded",
+            "match": {
+              "location": "ShoppingStepDef.i_check_text_on_summer_dresses_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2553293967,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select dress and colour",
+            "match": {
+              "location": "ShoppingStepDef.i_select_dress_color()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72937220,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I add item to Cart",
+            "match": {
+              "location": "ShoppingStepDef.i_add_item_to_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5049934645,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate back to Summer Dresses Page",
+            "match": {
+              "location": "ShoppingStepDef.i_navigate_back_to_main_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4225180631,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify contents of the cart has selected colour",
+            "match": {
+              "location": "ShoppingStepDef.i_view_cart_summary()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Check Shopping Functions",
+    "description": "",
+    "id": "check-shopping-functions",
+    "keyword": "Feature",
+    "uri": "Shopping.feature"
   }
 ]
